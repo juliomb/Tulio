@@ -17,7 +17,10 @@ class CustomDateTimePicker: UIDatePicker {
         
         self.datePickerMode = .dateAndTime
         self.locale = defaultLocale
+        self.minuteInterval = 30
     }
+    
+    
     
     required init(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")

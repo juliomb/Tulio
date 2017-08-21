@@ -12,9 +12,10 @@
 		1B24A0121F4ABFFC00ADB134 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B24A0111F4ABFFC00ADB134 /* Assets.xcassets */; };
 		1B24A0151F4ABFFC00ADB134 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B24A0131F4ABFFC00ADB134 /* LaunchScreen.storyboard */; };
 		1B24A0201F4ABFFC00ADB134 /* TulioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B24A01F1F4ABFFC00ADB134 /* TulioTests.swift */; };
-		1B24A02F1F4AC7B300ADB134 /* QueryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B24A02E1F4AC7B300ADB134 /* QueryViewController.swift */; };
+		1B24A02F1F4AC7B300ADB134 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B24A02E1F4AC7B300ADB134 /* SearchViewController.swift */; };
 		1B24A0321F4ACBA200ADB134 /* SharedFormatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B24A0311F4ACBA200ADB134 /* SharedFormatters.swift */; };
 		1B24A0371F4ACEDD00ADB134 /* CustomDateTimePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B24A0361F4ACEDD00ADB134 /* CustomDateTimePicker.swift */; };
+		1BE341501F4B816E00DA303C /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE3414F1F4B816E00DA303C /* Settings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,9 +38,10 @@
 		1B24A01B1F4ABFFC00ADB134 /* TulioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TulioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B24A01F1F4ABFFC00ADB134 /* TulioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TulioTests.swift; sourceTree = "<group>"; };
 		1B24A0211F4ABFFC00ADB134 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1B24A02E1F4AC7B300ADB134 /* QueryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryViewController.swift; sourceTree = "<group>"; };
+		1B24A02E1F4AC7B300ADB134 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		1B24A0311F4ACBA200ADB134 /* SharedFormatters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedFormatters.swift; sourceTree = "<group>"; };
 		1B24A0361F4ACEDD00ADB134 /* CustomDateTimePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomDateTimePicker.swift; sourceTree = "<group>"; };
+		1BE3414F1F4B816E00DA303C /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +107,7 @@
 		1B24A02A1F4AC54000ADB134 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				1B24A02E1F4AC7B300ADB134 /* QueryViewController.swift */,
+				1B24A02E1F4AC7B300ADB134 /* SearchViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -136,6 +138,7 @@
 		1B24A0301F4ACB8D00ADB134 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				1BE3414F1F4B816E00DA303C /* Settings.swift */,
 				1B24A0311F4ACBA200ADB134 /* SharedFormatters.swift */,
 				1B24A0361F4ACEDD00ADB134 /* CustomDateTimePicker.swift */,
 			);
@@ -249,8 +252,9 @@
 			files = (
 				1B24A0321F4ACBA200ADB134 /* SharedFormatters.swift in Sources */,
 				1B24A00B1F4ABFFC00ADB134 /* AppDelegate.swift in Sources */,
-				1B24A02F1F4AC7B300ADB134 /* QueryViewController.swift in Sources */,
+				1B24A02F1F4AC7B300ADB134 /* SearchViewController.swift in Sources */,
 				1B24A0371F4ACEDD00ADB134 /* CustomDateTimePicker.swift in Sources */,
+				1BE341501F4B816E00DA303C /* Settings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +464,7 @@
 				1B24A0261F4ABFFC00ADB134 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1B24A0271F4ABFFC00ADB134 /* Build configuration list for PBXNativeTarget "TulioTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +473,7 @@
 				1B24A0291F4ABFFC00ADB134 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

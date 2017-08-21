@@ -1,5 +1,5 @@
 //
-//  QueryViewController.swift
+//  SearchViewController.swift
 //  Tulio
 //
 //  Created by Julio Martinez on 21/08/2017.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class QueryViewController: UIViewController {
+class SearchViewController: UIViewController {
     
     @IBOutlet weak var placeTextField: UITextField!
     @IBOutlet weak var fromDateTextField: UITextField!
@@ -31,14 +31,25 @@ class QueryViewController: UIViewController {
         
         fromDateTextField.inputView = fromDatePicker
         untilDateTextField.inputView = untilDatePicker
+        
+        // this will put in the text views the default values
+        fromDatePicker.date = Settings.initialFromDate
+        untilDatePicker.date = Settings.initialFromDate.addingTimeInterval(Settings.defaultRentInterval)
+        dateChanged(fromDatePicker)
+        dateChanged(untilDatePicker)
     }
     
     func dateChanged(_ datePicker: UIDatePicker) {
-        if datePicker == fromDatePicker {
-            fromDateTextField.text = dateFormatter.string(from: datePicker.date)
-        } else if datePicker == untilDatePicker {
-            untilDateTextField.text = dateFormatter.string(from: datePicker.date)
+        // we can't allow past dates
+        if fromDatePicker.date < Date() {
+            fromDatePicker.date = Settings.minimumFromDate
         }
+        // we can't allow that until date is before than from date
+        if untilDatePicker.date < fromDatePicker.date+Settings.minimumRentInterval {
+            untilDatePicker.date = fromDatePicker.date.addingTimeInterval(Settings.minimumRentInterval)
+        }
+        fromDateTextField.text = dateFormatter.string(from: fromDatePicker.date)
+        untilDateTextField.text = dateFormatter.string(from: untilDatePicker.date)
     }
     
 }
