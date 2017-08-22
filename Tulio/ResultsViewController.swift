@@ -24,9 +24,8 @@ class ResultsViewController: UIViewController {
     @IBOutlet weak var noConnectionView: UIView!
     @IBOutlet weak var resultsTableView: UITableView!
     
-    var fromDate: Date!
-    var untilDate: Date!
-    var place: String!
+    var searchParams: SearchParams!
+    var carResults: [CarResult]?
     
     var state: ResultsControllerState = .loading {
         willSet {
@@ -46,9 +45,9 @@ class ResultsViewController: UIViewController {
             case .loading:
                 loadingView.isHidden = false
             case .noResults:
-                noResultsView.isHidden = true
+                noResultsView.isHidden = false
             case .noConnection:
-                noConnectionView.isHidden = true
+                noConnectionView.isHidden = false
             case .results:
                 resultsTableView.isHidden = false
                 resultsTableView.reloadData()
@@ -59,7 +58,10 @@ class ResultsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //TODO call to the API
+        CarResultsInteractor(searchParams: searchParams).execute { (carResults) in
+            self.carResults = carResults
+            self.state = carResults.count > 0 ? .results : .noResults
+        }
     }
     
 }

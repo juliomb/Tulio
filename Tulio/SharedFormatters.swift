@@ -16,4 +16,16 @@ struct SharedFormatters {
         return df
     }()
     
+    static let onlyDateFormatter: DateFormatter = {
+        let df = DateFormatter()
+        df.dateFormat = "MM/dd/YYYY"
+        return df
+    }()
+    
+    static let onlyTimeFormatter: DateFormatter = {
+        let df = DateFormatter()
+        df.dateFormat = "HH:mm"
+        return df
+    }()
+    
 }

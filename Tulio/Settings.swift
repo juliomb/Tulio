@@ -10,6 +10,8 @@ import Foundation
 
 struct Settings {
     
+    static let apiKey = "br3d8vqbgaunz4m5sfsz89c2"
+    
     // MARK: Search dates
     
     static var initialFromDate: Date {

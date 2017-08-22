@@ -35,7 +35,8 @@ class SearchViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showResultsSegue"{
-            
+            let destVC = segue.destination as! ResultsViewController
+            destVC.searchParams = SearchParams(place: placeTextField.text!, fromDate: fromDatePicker.date, untilDate: untilDatePicker.date)
         }
     }
     
