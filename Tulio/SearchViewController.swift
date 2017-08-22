@@ -17,39 +17,26 @@ class SearchViewController: UIViewController {
     let untilDatePicker = CustomDateTimePicker()
     let dateFormatter = SharedFormatters.dateTimeFormatter
     
-    @IBAction func searchClicked(_ sender: Any) {
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupDateInputViews()
     }
-    
-    func setupDateInputViews(){
-        fromDatePicker.addTarget(self, action: #selector(dateChanged(_:)), for: .valueChanged)
-        untilDatePicker.addTarget(self, action: #selector(dateChanged(_:)), for: .valueChanged)
-        
-        fromDateTextField.inputView = fromDatePicker
-        untilDateTextField.inputView = untilDatePicker
-        
-        // this will put in the text views the default values
-        fromDatePicker.date = Settings.initialFromDate
-        untilDatePicker.date = Settings.initialFromDate.addingTimeInterval(Settings.defaultRentInterval)
-        dateChanged(fromDatePicker)
-        dateChanged(untilDatePicker)
+
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        if placeTextField.text == nil || placeTextField.text?.isEmpty == true {
+            let alertController = UIAlertController(title: nil, message: "Please, tell us where you want to pick up the car.", preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            present(alertController, animated: true, completion: nil)
+            return false
+        }
+        return true
     }
     
-    func dateChanged(_ datePicker: UIDatePicker) {
-        // we can't allow past dates
-        if fromDatePicker.date < Date() {
-            fromDatePicker.date = Settings.minimumFromDate
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showResultsSegue"{
+            
         }
-        // we can't allow that until date is before than from date
-        if untilDatePicker.date < fromDatePicker.date+Settings.minimumRentInterval {
-            untilDatePicker.date = fromDatePicker.date.addingTimeInterval(Settings.minimumRentInterval)
-        }
-        fromDateTextField.text = dateFormatter.string(from: fromDatePicker.date)
-        untilDateTextField.text = dateFormatter.string(from: untilDatePicker.date)
     }
     
 }

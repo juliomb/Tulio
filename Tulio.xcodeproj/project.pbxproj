@@ -15,7 +15,10 @@
 		1B24A02F1F4AC7B300ADB134 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B24A02E1F4AC7B300ADB134 /* SearchViewController.swift */; };
 		1B24A0321F4ACBA200ADB134 /* SharedFormatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B24A0311F4ACBA200ADB134 /* SharedFormatters.swift */; };
 		1B24A0371F4ACEDD00ADB134 /* CustomDateTimePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B24A0361F4ACEDD00ADB134 /* CustomDateTimePicker.swift */; };
+		1B68F8F61F4C17E4008B628C /* SearchViewController+SearchForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B68F8F51F4C17E4008B628C /* SearchViewController+SearchForm.swift */; };
+		1B68F8F91F4C195A008B628C /* ResultsViewController+Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B68F8F81F4C195A008B628C /* ResultsViewController+Table.swift */; };
 		1BE341501F4B816E00DA303C /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE3414F1F4B816E00DA303C /* Settings.swift */; };
+		1BE341521F4B848400DA303C /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE341511F4B848400DA303C /* ResultsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +44,10 @@
 		1B24A02E1F4AC7B300ADB134 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		1B24A0311F4ACBA200ADB134 /* SharedFormatters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedFormatters.swift; sourceTree = "<group>"; };
 		1B24A0361F4ACEDD00ADB134 /* CustomDateTimePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomDateTimePicker.swift; sourceTree = "<group>"; };
+		1B68F8F51F4C17E4008B628C /* SearchViewController+SearchForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SearchViewController+SearchForm.swift"; sourceTree = "<group>"; };
+		1B68F8F81F4C195A008B628C /* ResultsViewController+Table.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ResultsViewController+Table.swift"; sourceTree = "<group>"; };
 		1BE3414F1F4B816E00DA303C /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		1BE341511F4B848400DA303C /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +113,8 @@
 		1B24A02A1F4AC54000ADB134 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				1B24A02E1F4AC7B300ADB134 /* SearchViewController.swift */,
+				1B68F8F41F4C17C6008B628C /* SearchViewController */,
+				1B68F8F71F4C1829008B628C /* ResultsViewController */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -143,6 +150,24 @@
 				1B24A0361F4ACEDD00ADB134 /* CustomDateTimePicker.swift */,
 			);
 			name = Common;
+			sourceTree = "<group>";
+		};
+		1B68F8F41F4C17C6008B628C /* SearchViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1B24A02E1F4AC7B300ADB134 /* SearchViewController.swift */,
+				1B68F8F51F4C17E4008B628C /* SearchViewController+SearchForm.swift */,
+			);
+			name = SearchViewController;
+			sourceTree = "<group>";
+		};
+		1B68F8F71F4C1829008B628C /* ResultsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1BE341511F4B848400DA303C /* ResultsViewController.swift */,
+				1B68F8F81F4C195A008B628C /* ResultsViewController+Table.swift */,
+			);
+			name = ResultsViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,11 +275,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B68F8F91F4C195A008B628C /* ResultsViewController+Table.swift in Sources */,
 				1B24A0321F4ACBA200ADB134 /* SharedFormatters.swift in Sources */,
 				1B24A00B1F4ABFFC00ADB134 /* AppDelegate.swift in Sources */,
 				1B24A02F1F4AC7B300ADB134 /* SearchViewController.swift in Sources */,
 				1B24A0371F4ACEDD00ADB134 /* CustomDateTimePicker.swift in Sources */,
+				1B68F8F61F4C17E4008B628C /* SearchViewController+SearchForm.swift in Sources */,
 				1BE341501F4B816E00DA303C /* Settings.swift in Sources */,
+				1BE341521F4B848400DA303C /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
