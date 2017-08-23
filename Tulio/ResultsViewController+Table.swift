@@ -15,11 +15,16 @@ extension ResultsViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0 // TODO
+        return carResults?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        guard let carResult = carResults?[indexPath.row] else {
+            fatalError()
+        }
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CarResultIdentifier", for: indexPath) as! CarResultCell
+        cell.carResult = carResult
+        return cell
     }
     
 }

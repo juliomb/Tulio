@@ -30,14 +30,16 @@ class HotwireAPIManagerURLSessionImpl: HotwireAPIManager {
                 do {
                     let json = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as! Dictionary<String, Any>
                     var carResults: [CarResult] = []
-                    if let carsJSON = json["Result"] as? [Dictionary<String, String>] {
+                    if let carsJSON = json["Result"] as? [Dictionary<String, Any>] {
                         for carJSON in carsJSON {
                             if let carResult = CarResult(json: carJSON){
                                 carResults.append(carResult)
                             }
                         }
                     }
-                    completion(carResults)
+                    DispatchQueue.main.async {
+                        completion(carResults)
+                    }
                 } catch {
                     print("Error parsing car results: " + error.localizedDescription)
                     if let onError = onError {

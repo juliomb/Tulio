@@ -22,6 +22,7 @@
 		1B68F9001F4CA861008B628C /* SearchParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B68F8FF1F4CA861008B628C /* SearchParams.swift */; };
 		1B68F9031F4CA94E008B628C /* CarResultsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B68F9021F4CA94E008B628C /* CarResultsInteractor.swift */; };
 		1B68F9051F4CA9BB008B628C /* HotwireAPIManagerURLSessionImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B68F9041F4CA9BB008B628C /* HotwireAPIManagerURLSessionImpl.swift */; };
+		1B68F9071F4CCACB008B628C /* CarResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B68F9061F4CCACB008B628C /* CarResultCell.swift */; };
 		1BE341501F4B816E00DA303C /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE3414F1F4B816E00DA303C /* Settings.swift */; };
 		1BE341521F4B848400DA303C /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE341511F4B848400DA303C /* ResultsViewController.swift */; };
 /* End PBXBuildFile section */
@@ -56,6 +57,7 @@
 		1B68F8FF1F4CA861008B628C /* SearchParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchParams.swift; sourceTree = "<group>"; };
 		1B68F9021F4CA94E008B628C /* CarResultsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarResultsInteractor.swift; sourceTree = "<group>"; };
 		1B68F9041F4CA9BB008B628C /* HotwireAPIManagerURLSessionImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotwireAPIManagerURLSessionImpl.swift; sourceTree = "<group>"; };
+		1B68F9061F4CCACB008B628C /* CarResultCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarResultCell.swift; sourceTree = "<group>"; };
 		1BE3414F1F4B816E00DA303C /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		1BE341511F4B848400DA303C /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -181,6 +183,7 @@
 			children = (
 				1BE341511F4B848400DA303C /* ResultsViewController.swift */,
 				1B68F8F81F4C195A008B628C /* ResultsViewController+Table.swift */,
+				1B68F9061F4CCACB008B628C /* CarResultCell.swift */,
 			);
 			name = ResultsViewController;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 				1BE341501F4B816E00DA303C /* Settings.swift in Sources */,
 				1BE341521F4B848400DA303C /* ResultsViewController.swift in Sources */,
 				1B68F8FC1F4CA720008B628C /* HotwireAPIManager.swift in Sources */,
+				1B68F9071F4CCACB008B628C /* CarResultCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
