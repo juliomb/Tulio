@@ -25,6 +25,7 @@
 		1B68F9071F4CCACB008B628C /* CarResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B68F9061F4CCACB008B628C /* CarResultCell.swift */; };
 		1B68F9091F4DAEFE008B628C /* SearchViewController+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B68F9081F4DAEFE008B628C /* SearchViewController+Keyboard.swift */; };
 		1B68F90C1F4DAFD9008B628C /* CarResultDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B68F90B1F4DAFD9008B628C /* CarResultDetailViewController.swift */; };
+		1B68F90E1F4DCCB6008B628C /* HotwireAPIManagerFakeImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B68F90D1F4DCCB5008B628C /* HotwireAPIManagerFakeImpl.swift */; };
 		1BE341501F4B816E00DA303C /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE3414F1F4B816E00DA303C /* Settings.swift */; };
 		1BE341521F4B848400DA303C /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE341511F4B848400DA303C /* ResultsViewController.swift */; };
 		69CF54DB294C2F8BA7856B9F /* Pods_TulioTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C57C8FF04F79E9D7AFD87DE5 /* Pods_TulioTests.framework */; };
@@ -65,6 +66,7 @@
 		1B68F9061F4CCACB008B628C /* CarResultCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarResultCell.swift; sourceTree = "<group>"; };
 		1B68F9081F4DAEFE008B628C /* SearchViewController+Keyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SearchViewController+Keyboard.swift"; sourceTree = "<group>"; };
 		1B68F90B1F4DAFD9008B628C /* CarResultDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarResultDetailViewController.swift; sourceTree = "<group>"; };
+		1B68F90D1F4DCCB5008B628C /* HotwireAPIManagerFakeImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotwireAPIManagerFakeImpl.swift; sourceTree = "<group>"; };
 		1BE3414F1F4B816E00DA303C /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		1BE341511F4B848400DA303C /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		36F8DE6ED81ED74DEB303F42 /* Pods-Tulio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tulio.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tulio/Pods-Tulio.release.xcconfig"; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 			children = (
 				1B68F8FB1F4CA720008B628C /* HotwireAPIManager.swift */,
 				1B68F9041F4CA9BB008B628C /* HotwireAPIManagerURLSessionImpl.swift */,
+				1B68F90D1F4DCCB5008B628C /* HotwireAPIManagerFakeImpl.swift */,
 			);
 			name = Managers;
 			sourceTree = "<group>";
@@ -458,6 +461,7 @@
 				1B68F8F61F4C17E4008B628C /* SearchViewController+SearchForm.swift in Sources */,
 				1B68F9031F4CA94E008B628C /* CarResultsInteractor.swift in Sources */,
 				1BE341501F4B816E00DA303C /* Settings.swift in Sources */,
+				1B68F90E1F4DCCB6008B628C /* HotwireAPIManagerFakeImpl.swift in Sources */,
 				1BE341521F4B848400DA303C /* ResultsViewController.swift in Sources */,
 				1B68F90C1F4DAFD9008B628C /* CarResultDetailViewController.swift in Sources */,
 				1B68F8FC1F4CA720008B628C /* HotwireAPIManager.swift in Sources */,

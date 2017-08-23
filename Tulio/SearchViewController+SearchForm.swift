@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension SearchViewController {
+extension SearchViewController: UITextFieldDelegate {
     
     func setupDateInputViews(){
         fromDatePicker.addTarget(self, action: #selector(dateChanged(_:)), for: .valueChanged)
@@ -41,6 +41,11 @@ extension SearchViewController {
         placeTextField.resignFirstResponder()
         fromDateTextField.resignFirstResponder()
         untilDateTextField.resignFirstResponder()
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        placeTextField.resignFirstResponder()
+        return true
     }
     
 }

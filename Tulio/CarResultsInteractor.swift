@@ -13,7 +13,7 @@ class CarResultsInteractor {
     let manager: HotwireAPIManager
     let searchParams: SearchParams
     
-    init(searchParams: SearchParams, manager: HotwireAPIManager = HotwireAPIManagerURLSessionImpl()) {
+    init(searchParams: SearchParams, manager: HotwireAPIManager = HotwireAPIManagerFakeImpl()) {
         self.searchParams = searchParams
         self.manager = manager
     }

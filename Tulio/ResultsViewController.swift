@@ -62,7 +62,6 @@ class ResultsViewController: UIViewController {
             self.carResults = carResults
             self.state = carResults.count > 0 ? .results : .noResults
         }) { (error) in
-            // TODO
             self.state = .noConnection
         }
     }

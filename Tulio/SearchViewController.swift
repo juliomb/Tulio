@@ -31,6 +31,7 @@ class SearchViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupDateInputViews()
+        placeTextField.delegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
