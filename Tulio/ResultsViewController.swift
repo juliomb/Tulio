@@ -64,4 +64,15 @@ class ResultsViewController: UIViewController {
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let carResult = carResults?[(resultsTableView.indexPathForSelectedRow?.row)!] else { fatalError() }
+        
+        let detailVC = segue.destination as! CarResultDetailViewController
+        detailVC.carResult = carResult
+        detailVC.view.frame = view.bounds
+        detailVC.view.insertSubview(Settings.defaultVisualEffectView(withFrame: view.bounds), at: 0)
+        detailVC.modalPresentationStyle = .overFullScreen
+        resultsTableView.deselectRow(at: resultsTableView.indexPathForSelectedRow!, animated: false)
+    }
+    
 }

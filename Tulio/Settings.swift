@@ -6,9 +6,18 @@
 //  Copyright © 2017 Julio Martinez. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 struct Settings {
+    
+    static let defaultTintColor = #colorLiteral(red: 0.07843137255, green: 0.6666666667, blue: 0.0862745098, alpha: 1)
+    static func defaultVisualEffectView(withFrame frame: CGRect) -> UIVisualEffectView {
+        let effect = UIBlurEffect(style: .extraLight)
+        let effectView = UIVisualEffectView(effect: effect)
+        effectView.frame = frame
+        effectView.isUserInteractionEnabled = true
+        return effectView
+    }
     
     static let apiKey = "br3d8vqbgaunz4m5sfsz89c2"
     static let baseCarImagesURL = URL(string: "http://ak-secure.qa.hotwirestatic.com/current/intl/static/images/car/car-types/275x165/")!

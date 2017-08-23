@@ -19,9 +19,8 @@ extension ResultsViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let carResult = carResults?[indexPath.row] else {
-            fatalError()
-        }
+        guard let carResult = carResults?[indexPath.row] else { fatalError() }
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "CarResultIdentifier", for: indexPath) as! CarResultCell
         cell.carResult = carResult
         return cell

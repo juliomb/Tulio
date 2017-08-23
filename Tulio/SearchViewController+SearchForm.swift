@@ -37,4 +37,10 @@ extension SearchViewController {
         untilDateTextField.text = dateFormatter.string(from: untilDatePicker.date)
     }
     
+    func formResignFirstResponder() {
+        placeTextField.resignFirstResponder()
+        fromDateTextField.resignFirstResponder()
+        untilDateTextField.resignFirstResponder()
+    }
+    
 }

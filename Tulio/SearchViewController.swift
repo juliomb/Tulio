@@ -17,10 +17,30 @@ class SearchViewController: UIViewController {
     let untilDatePicker = CustomDateTimePicker()
     let dateFormatter = SharedFormatters.dateTimeFormatter
     
+    @IBOutlet weak var searchButton: UIButton!{
+        didSet {
+            searchButton.layer.cornerRadius = searchButton.frame.height/2
+        }
+    }
+    
+    
+    @IBOutlet weak var formVerticalAlignmentConstraint: NSLayoutConstraint!
+    @IBOutlet weak var stackViewTopSpaceToViewContrstraint: NSLayoutConstraint!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupDateInputViews()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        registerForKeyboardNotifications()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        tearDownKeyboardNotification()
     }
 
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
@@ -37,7 +57,17 @@ class SearchViewController: UIViewController {
         if segue.identifier == "showResultsSegue"{
             let destVC = segue.destination as! ResultsViewController
             destVC.searchParams = SearchParams(place: placeTextField.text!, fromDate: fromDatePicker.date, untilDate: untilDatePicker.date)
+            formResignFirstResponder()
         }
     }
+    
+    @IBAction func tappedInBackground(_ sender: Any) {
+        formResignFirstResponder()
+    }
+    
+    @IBAction func swippedUpInBackground(_ sender: Any) {
+        formResignFirstResponder()
+    }
+
     
 }
