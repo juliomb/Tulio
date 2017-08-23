@@ -18,12 +18,14 @@ class CarResultsInteractor {
         self.manager = manager
     }
     
-    func execute(completion: @escaping ([CarResult]) -> Void) {
+    func execute(completion: @escaping ([CarResult]) -> Void, onError: ((Error) -> Void)? = nil) {
         manager.searchCars(withSearchParams: searchParams, completion: { carResults in
             assert(Thread.current == Thread.main)
             completion(carResults)
         }) { error in
-            // TODO
+            if let onError = onError {
+                onError(error)
+            }
         }
     }
     

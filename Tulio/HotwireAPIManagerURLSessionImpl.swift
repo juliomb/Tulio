@@ -24,6 +24,7 @@ class HotwireAPIManagerURLSessionImpl: HotwireAPIManager {
             
             if let error = error, let onError = onError {
                 onError(error)
+                return
             }
             
             if let data = data {

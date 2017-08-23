@@ -58,9 +58,12 @@ class ResultsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        CarResultsInteractor(searchParams: searchParams).execute { (carResults) in
+        CarResultsInteractor(searchParams: searchParams).execute(completion: { (carResults) in
             self.carResults = carResults
             self.state = carResults.count > 0 ? .results : .noResults
+        }) { (error) in
+            // TODO
+            self.state = .noConnection
         }
     }
     
