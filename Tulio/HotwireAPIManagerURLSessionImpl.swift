@@ -52,7 +52,7 @@ class HotwireAPIManagerURLSessionImpl: HotwireAPIManager {
         task.resume()
         
     }
-    
+
     
     fileprivate func buildURL(withSearchParams searchParams: SearchParams) -> URL? {
         var components = baseURLComponents

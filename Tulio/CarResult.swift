@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct CarResult {
+class CarResult {
     
     let carTypeCode: String
     let currencyCode: String
@@ -37,6 +37,9 @@ struct CarResult {
                 return "$"
             }
         }
+    }
+    var imageURL: URL? {
+        return Settings.baseCarImagesURL.appendingPathComponent("\(carTypeCode).png")
     }
 
     let pickupAirport: String?

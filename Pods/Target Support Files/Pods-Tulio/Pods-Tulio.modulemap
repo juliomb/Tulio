@@ -1,0 +1,6 @@
+framework module Pods_Tulio {
+  umbrella header "Pods-Tulio-umbrella.h"
+
+  export *
+  module * { export * }
+}

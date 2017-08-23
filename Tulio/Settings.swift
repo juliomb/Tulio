@@ -11,6 +11,7 @@ import Foundation
 struct Settings {
     
     static let apiKey = "br3d8vqbgaunz4m5sfsz89c2"
+    static let baseCarImagesURL = URL(string: "http://ak-secure.qa.hotwirestatic.com/current/intl/static/images/car/car-types/275x165/")!
     
     // MARK: Search dates
     

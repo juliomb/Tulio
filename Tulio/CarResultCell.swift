@@ -7,10 +7,16 @@
 //
 
 import UIKit
+import Kingfisher
 
 class CarResultCell: UITableViewCell {
     
-    @IBOutlet weak var carTypeCodeLabel: UILabel!
+    @IBOutlet weak var carPhotoImageView: UIImageView!
+    @IBOutlet weak var totalPriceLabel: UILabel!
+    @IBOutlet weak var rentalDaysLabel: UILabel!
+    @IBOutlet weak var locationLabel: UILabel!
+    
+    let placeholder = #imageLiteral(resourceName: "carPlaceholder")
     
     private var _carResult: CarResult? = nil
     var carResult: CarResult {
@@ -19,8 +25,16 @@ class CarResultCell: UITableViewCell {
         }
         set {
             _carResult = newValue
-            carTypeCodeLabel.text = carResult.carTypeCode
+            carPhotoImageView.kf.setImage(with: carResult.imageURL, placeholder: placeholder)
+            totalPriceLabel.text = "\(carResult.totalPrice) \(carResult.currency)"
+            rentalDaysLabel.text = "\(carResult.rentalDays) days"
+            locationLabel.text = carResult.location
         }
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        carPhotoImageView.image = placeholder
     }
     
 }
