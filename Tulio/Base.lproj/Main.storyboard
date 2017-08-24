@@ -33,9 +33,10 @@
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter city, airport or address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HCl-dX-EU7">
                                         <rect key="frame" x="0.0" y="41.5" width="270" height="42"/>
+                                        <color key="tintColor" red="0.078431372550000003" green="0.66666666669999997" blue="0.086274509799999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="search" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vmF-Mt-ved">
                                         <rect key="frame" x="0.0" y="83.5" width="270" height="41.5"/>
@@ -80,16 +81,25 @@
                                     <segue destination="dj6-6E-bMD" kind="show" identifier="showResultsSegue" id="PLj-qc-10Y"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tulio-logo" translatesAutoresizingMaskIntoConstraints="NO" id="kQs-BT-cb2">
+                                <rect key="frame" x="183" y="426" width="129" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="1Wy-Nb-fnc"/>
+                                    <constraint firstAttribute="width" constant="129" id="XJA-nA-SO7"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="LD5-KE-K26" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="EOT-W6-RTo"/>
                             <constraint firstItem="LD5-KE-K26" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="25" id="IfY-Ly-YeD"/>
+                            <constraint firstAttribute="trailing" secondItem="kQs-BT-cb2" secondAttribute="trailing" constant="8" id="QuW-n2-Tws"/>
                             <constraint firstItem="LD5-KE-K26" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-50" id="SGp-tX-bQU"/>
                             <constraint firstItem="2cf-C8-kEt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="czF-wx-K5f"/>
                             <constraint firstItem="2cf-C8-kEt" firstAttribute="top" secondItem="LD5-KE-K26" secondAttribute="bottom" constant="40" id="hXD-kT-eG7"/>
                             <constraint firstAttribute="trailing" secondItem="LD5-KE-K26" secondAttribute="trailing" constant="25" id="pob-Yk-BSE"/>
+                            <constraint firstAttribute="bottom" secondItem="kQs-BT-cb2" secondAttribute="bottom" id="sui-JM-8Fb"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -125,7 +135,7 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1080.8" y="138.98050974512745"/>
+            <point key="canvasLocation" x="1080" y="138.75"/>
         </scene>
         <!--Results-->
         <scene sceneID="n1l-YC-sN6">
@@ -406,12 +416,14 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="dQj-ES-5S4">
                                 <rect key="frame" x="32" y="219" width="256" height="125"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JFK Airport" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fvy-nj-Ptd">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6i1-NT-t96">
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="25"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                        <state key="normal" title="JFK Airport"/>
+                                        <connections>
+                                            <action selector="locationButtonClicked:" destination="jDw-cJ-qdh" eventType="touchUpInside" id="upX-Cb-WEq"/>
+                                        </connections>
+                                    </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="97r-Up-hup">
                                         <rect key="frame" x="0.0" y="25" width="130" height="25"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
@@ -477,8 +489,8 @@
                         <outlet property="dailyRateLabel" destination="qGj-ug-teE" id="s7U-AD-X92"/>
                         <outlet property="dropoffLabel" destination="Oht-LX-HuF" id="bAR-eg-ZHJ"/>
                         <outlet property="getItButton" destination="ltz-Gt-EDf" id="cRP-V1-V1N"/>
+                        <outlet property="locationButton" destination="6i1-NT-t96" id="eZX-GD-Nmc"/>
                         <outlet property="locationDescriptionLabel" destination="97r-Up-hup" id="Ljd-nv-fTc"/>
-                        <outlet property="locationLabel" destination="Fvy-nj-Ptd" id="XAI-QY-NbD"/>
                         <outlet property="pickupLabel" destination="LOy-aq-cHX" id="WNw-ZT-dZD"/>
                         <outlet property="rentalDaysLabel" destination="lSt-QW-7Qb" id="yAF-5d-62S"/>
                         <outlet property="subtotalLabel" destination="ZMe-Qk-2oc" id="0Up-lb-LvH"/>
@@ -501,7 +513,7 @@
                         <color key="tintColor" red="0.078431372550000003" green="0.66666666669999997" blue="0.086274509799999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="barTintColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="28"/>
+                            <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="28"/>
                             <color key="textColor" red="0.078431372550000003" green="0.66666666669999997" blue="0.086274509799999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </textAttributes>
                     </navigationBar>
@@ -517,5 +529,6 @@
     </scenes>
     <resources>
         <image name="carPlaceholder" width="292" height="180"/>
+        <image name="tulio-logo" width="750" height="230"/>
     </resources>
 </document>

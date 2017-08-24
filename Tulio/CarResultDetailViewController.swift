@@ -8,6 +8,7 @@
 
 import UIKit
 import Kingfisher
+import MapKit
 
 class CarResultDetailViewController: UIViewController {
     
@@ -16,7 +17,6 @@ class CarResultDetailViewController: UIViewController {
     @IBOutlet weak var taxesLabel: UILabel!
     @IBOutlet weak var subtotalLabel: UILabel!
     @IBOutlet weak var dailyRateLabel: UILabel!
-    @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var locationDescriptionLabel: UILabel!
     @IBOutlet weak var pickupLabel: UILabel!
     @IBOutlet weak var dropoffLabel: UILabel!
@@ -26,6 +26,8 @@ class CarResultDetailViewController: UIViewController {
             getItButton.layer.cornerRadius = getItButton.frame.height/2
         }
     }
+    @IBOutlet weak var locationButton: UIButton!
+    
     
     var carResult: CarResult!
 
@@ -42,7 +44,7 @@ class CarResultDetailViewController: UIViewController {
         taxesLabel.text = "Taxes/fees: \(carResult.taxesAndFees) \(carResult.currency)"
         subtotalLabel.text = "Subtotal: \(carResult.subTotal) \(carResult.currency)"
         dailyRateLabel.text = "Daily: \(carResult.dailyRate) \(carResult.currency)"
-        locationLabel.text = carResult.location
+        locationButton.setTitle(carResult.location, for: .normal)
         locationDescriptionLabel.text = carResult.locationDescription
         pickupLabel.text = "Pickup: \(carResult.pickupDay)   \(carResult.pickupTime)"
         dropoffLabel.text = "Dropoff: \(carResult.dropoffDay)   \(carResult.dropoffTime)"
@@ -65,5 +67,8 @@ class CarResultDetailViewController: UIViewController {
         }
     }
     
+    @IBAction func locationButtonClicked(_ sender: Any) {
+        MapsManager.openMaps(withLocation: carResult.location)
+    }
     
 }

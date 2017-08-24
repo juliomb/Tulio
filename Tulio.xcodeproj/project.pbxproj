@@ -15,6 +15,7 @@
 		1B24A02F1F4AC7B300ADB134 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B24A02E1F4AC7B300ADB134 /* SearchViewController.swift */; };
 		1B24A0321F4ACBA200ADB134 /* SharedFormatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B24A0311F4ACBA200ADB134 /* SharedFormatters.swift */; };
 		1B24A0371F4ACEDD00ADB134 /* CustomDateTimePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B24A0361F4ACEDD00ADB134 /* CustomDateTimePicker.swift */; };
+		1B55531D1F4EF7C900EE9544 /* MapsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B55531C1F4EF7C900EE9544 /* MapsManager.swift */; };
 		1B68F8F61F4C17E4008B628C /* SearchViewController+SearchForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B68F8F51F4C17E4008B628C /* SearchViewController+SearchForm.swift */; };
 		1B68F8F91F4C195A008B628C /* ResultsViewController+Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B68F8F81F4C195A008B628C /* ResultsViewController+Table.swift */; };
 		1B68F8FC1F4CA720008B628C /* HotwireAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B68F8FB1F4CA720008B628C /* HotwireAPIManager.swift */; };
@@ -56,6 +57,7 @@
 		1B24A02E1F4AC7B300ADB134 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		1B24A0311F4ACBA200ADB134 /* SharedFormatters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedFormatters.swift; sourceTree = "<group>"; };
 		1B24A0361F4ACEDD00ADB134 /* CustomDateTimePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomDateTimePicker.swift; sourceTree = "<group>"; };
+		1B55531C1F4EF7C900EE9544 /* MapsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapsManager.swift; sourceTree = "<group>"; };
 		1B68F8F51F4C17E4008B628C /* SearchViewController+SearchForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SearchViewController+SearchForm.swift"; sourceTree = "<group>"; };
 		1B68F8F81F4C195A008B628C /* ResultsViewController+Table.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ResultsViewController+Table.swift"; sourceTree = "<group>"; };
 		1B68F8FB1F4CA720008B628C /* HotwireAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotwireAPIManager.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 				1B68F8FB1F4CA720008B628C /* HotwireAPIManager.swift */,
 				1B68F9041F4CA9BB008B628C /* HotwireAPIManagerURLSessionImpl.swift */,
 				1B68F90D1F4DCCB5008B628C /* HotwireAPIManagerFakeImpl.swift */,
+				1B55531C1F4EF7C900EE9544 /* MapsManager.swift */,
 			);
 			name = Managers;
 			sourceTree = "<group>";
@@ -455,6 +458,7 @@
 				1B68F8F91F4C195A008B628C /* ResultsViewController+Table.swift in Sources */,
 				1B24A0321F4ACBA200ADB134 /* SharedFormatters.swift in Sources */,
 				1B24A00B1F4ABFFC00ADB134 /* AppDelegate.swift in Sources */,
+				1B55531D1F4EF7C900EE9544 /* MapsManager.swift in Sources */,
 				1B68F8FE1F4CA7CD008B628C /* CarResult.swift in Sources */,
 				1B24A02F1F4AC7B300ADB134 /* SearchViewController.swift in Sources */,
 				1B24A0371F4ACEDD00ADB134 /* CustomDateTimePicker.swift in Sources */,
