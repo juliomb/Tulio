@@ -1,5 +1,5 @@
 //
-//  HotwireAPIManagerURLSessionImpl.swift
+//  HotwireAPIConsumerURLSessionImpl.swift
 //  Tulio
 //
 //  Created by Julio Martinez on 22/08/2017.
@@ -8,11 +8,11 @@
 
 import Foundation
 
-class HotwireAPIManagerURLSessionImpl: HotwireAPIManager {
+class HotwireAPIConsumerURLSessionImpl: HotwireAPIConsumer {
     
     let session = URLSession.shared
-    let baseURLComponents = URLComponents(string: "http://api.hotwire.com/v1/search/car")!
-    let baseQueryItems = [URLQueryItem(name: "apiKey", value: Settings.apiKey), URLQueryItem(name: "format", value: "json")]
+    let baseURLComponents = HotwireAPISettings.baseURLComponents
+    let baseQueryItems = [URLQueryItem(name: "apiKey", value: HotwireAPISettings.apiKey), URLQueryItem(name: "format", value: "json")]
     
     
     func searchCars(withSearchParams searchParams: SearchParams, completion: @escaping ([CarResult]) -> Void, onError: ((Error) -> Void)? = nil) {
@@ -23,28 +23,23 @@ class HotwireAPIManagerURLSessionImpl: HotwireAPIManager {
         let task = session.dataTask(with: url, completionHandler: { (data, response, error) in
             
             if let error = error, let onError = onError {
-                onError(error)
+                DispatchQueue.main.async { onError(error) }
                 return
             }
             
             if let data = data {
                 do {
                     let json = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as! Dictionary<String, Any>
-                    var carResults: [CarResult] = []
                     if let carsJSON = json["Result"] as? [Dictionary<String, Any>] {
-                        for carJSON in carsJSON {
-                            if let carResult = CarResult(json: carJSON){
-                                carResults.append(carResult)
-                            }
-                        }
-                    }
-                    DispatchQueue.main.async {
-                        completion(carResults)
+                        let carResults = CarResult.carResults(fromJSON: carsJSON)
+                        DispatchQueue.main.async { completion(carResults) }
+                    } else {
+                        DispatchQueue.main.async { completion([]) }
                     }
                 } catch {
                     print("Error parsing car results: " + error.localizedDescription)
                     if let onError = onError {
-                        onError(error)
+                        DispatchQueue.main.async { onError(error) }
                     }
                 }
             }

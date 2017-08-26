@@ -12,9 +12,9 @@ class SearchViewController: UIViewController {
     
     @IBOutlet weak var placeTextField: UITextField!
     @IBOutlet weak var fromDateTextField: UITextField!
-    let fromDatePicker = CustomDateTimePicker()
+    let fromDatePicker = UIDatePicker()
     @IBOutlet weak var untilDateTextField: UITextField!
-    let untilDatePicker = CustomDateTimePicker()
+    let untilDatePicker = UIDatePicker()
     let dateFormatter = SharedFormatters.dateTimeFormatter
     
     @IBOutlet weak var searchButton: UIButton!{

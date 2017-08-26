@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func customizeAppearance() {
-        window?.tintColor = Settings.defaultTintColor
+        window?.tintColor = UIColor.defaultTintColor
     }
     
 }

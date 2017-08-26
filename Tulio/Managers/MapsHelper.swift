@@ -1,5 +1,5 @@
 //
-//  MapsManager.swift
+//  MapsHelper.swift
 //  Tulio
 //
 //  Created by Julio Martinez on 24/08/2017.
@@ -9,7 +9,7 @@
 import Foundation
 import MapKit
 
-class MapsManager {
+class MapsHelper {
     
     private static let defaultRegionDistance: CLLocationDistance = 5000
     private static let baseMapsURLComponents = URLComponents(string: "http://maps.apple.com")!

@@ -1,5 +1,5 @@
 //
-//  HotwireAPIManagerFakeImpl.swift
+//  HotwireAPIConsumerFakeImpl.swift
 //  Tulio
 //
 //  Created by Julio Martinez on 23/08/2017.
@@ -9,7 +9,7 @@
 import Foundation
 
 
-class HotwireAPIManagerFakeImpl: HotwireAPIManager {
+class HotwireAPIConsumerFakeImpl: HotwireAPIConsumer {
     
     let fakeJSON = [
         "CurrencyCode": "USD",

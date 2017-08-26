@@ -58,7 +58,7 @@ class ResultsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        CarResultsInteractor(searchParams: searchParams).execute(completion: { (carResults) in
+        CarResultsInteractor().execute(withSearchParams: searchParams, completion: { (carResults) in
             self.carResults = carResults
             self.state = carResults.count > 0 ? .results : .noResults
         }) { (error) in
@@ -72,7 +72,7 @@ class ResultsViewController: UIViewController {
         let detailVC = segue.destination as! CarResultDetailViewController
         detailVC.carResult = carResult
         detailVC.view.frame = view.bounds
-        detailVC.view.insertSubview(Settings.defaultVisualEffectView(withFrame: view.bounds), at: 0)
+        detailVC.view.insertSubview(UIVisualEffectView.defaultVisualEffectView(withFrame: view.bounds), at: 0)
         detailVC.modalPresentationStyle = .overFullScreen
         resultsTableView.deselectRow(at: resultsTableView.indexPathForSelectedRow!, animated: false)
     }

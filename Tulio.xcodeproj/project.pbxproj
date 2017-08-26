@@ -14,20 +14,24 @@
 		1B24A0201F4ABFFC00ADB134 /* TulioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B24A01F1F4ABFFC00ADB134 /* TulioTests.swift */; };
 		1B24A02F1F4AC7B300ADB134 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B24A02E1F4AC7B300ADB134 /* SearchViewController.swift */; };
 		1B24A0321F4ACBA200ADB134 /* SharedFormatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B24A0311F4ACBA200ADB134 /* SharedFormatters.swift */; };
-		1B24A0371F4ACEDD00ADB134 /* CustomDateTimePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B24A0361F4ACEDD00ADB134 /* CustomDateTimePicker.swift */; };
-		1B55531D1F4EF7C900EE9544 /* MapsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B55531C1F4EF7C900EE9544 /* MapsManager.swift */; };
+		1B55531D1F4EF7C900EE9544 /* MapsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B55531C1F4EF7C900EE9544 /* MapsHelper.swift */; };
 		1B68F8F61F4C17E4008B628C /* SearchViewController+SearchForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B68F8F51F4C17E4008B628C /* SearchViewController+SearchForm.swift */; };
 		1B68F8F91F4C195A008B628C /* ResultsViewController+Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B68F8F81F4C195A008B628C /* ResultsViewController+Table.swift */; };
-		1B68F8FC1F4CA720008B628C /* HotwireAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B68F8FB1F4CA720008B628C /* HotwireAPIManager.swift */; };
+		1B68F8FC1F4CA720008B628C /* HotwireAPIConsumer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B68F8FB1F4CA720008B628C /* HotwireAPIConsumer.swift */; };
 		1B68F8FE1F4CA7CD008B628C /* CarResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B68F8FD1F4CA7CD008B628C /* CarResult.swift */; };
 		1B68F9001F4CA861008B628C /* SearchParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B68F8FF1F4CA861008B628C /* SearchParams.swift */; };
 		1B68F9031F4CA94E008B628C /* CarResultsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B68F9021F4CA94E008B628C /* CarResultsInteractor.swift */; };
-		1B68F9051F4CA9BB008B628C /* HotwireAPIManagerURLSessionImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B68F9041F4CA9BB008B628C /* HotwireAPIManagerURLSessionImpl.swift */; };
+		1B68F9051F4CA9BB008B628C /* HotwireAPIConsumerURLSessionImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B68F9041F4CA9BB008B628C /* HotwireAPIConsumerURLSessionImpl.swift */; };
 		1B68F9071F4CCACB008B628C /* CarResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B68F9061F4CCACB008B628C /* CarResultCell.swift */; };
 		1B68F9091F4DAEFE008B628C /* SearchViewController+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B68F9081F4DAEFE008B628C /* SearchViewController+Keyboard.swift */; };
 		1B68F90C1F4DAFD9008B628C /* CarResultDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B68F90B1F4DAFD9008B628C /* CarResultDetailViewController.swift */; };
-		1B68F90E1F4DCCB6008B628C /* HotwireAPIManagerFakeImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B68F90D1F4DCCB5008B628C /* HotwireAPIManagerFakeImpl.swift */; };
-		1BE341501F4B816E00DA303C /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE3414F1F4B816E00DA303C /* Settings.swift */; };
+		1B68F90E1F4DCCB6008B628C /* HotwireAPIConsumerFakeImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B68F90D1F4DCCB5008B628C /* HotwireAPIConsumerFakeImpl.swift */; };
+		1BA4D7BC1F51605200FF5C97 /* UIColor+AppCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA4D7BB1F51605200FF5C97 /* UIColor+AppCustom.swift */; };
+		1BA4D7BE1F5160B600FF5C97 /* UIVisualEffectView+AppCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA4D7BD1F5160B600FF5C97 /* UIVisualEffectView+AppCustom.swift */; };
+		1BA4D7C01F51611E00FF5C97 /* Date+AppCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA4D7BF1F51611E00FF5C97 /* Date+AppCustom.swift */; };
+		1BA4D7C21F51630C00FF5C97 /* TimeInterval+AppCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA4D7C11F51630C00FF5C97 /* TimeInterval+AppCustom.swift */; };
+		1BA4D7C41F51725300FF5C97 /* UIDatePicker+AppCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA4D7C31F51725300FF5C97 /* UIDatePicker+AppCustom.swift */; };
+		1BE341501F4B816E00DA303C /* HotwireAPISettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE3414F1F4B816E00DA303C /* HotwireAPISettings.swift */; };
 		1BE341521F4B848400DA303C /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE341511F4B848400DA303C /* ResultsViewController.swift */; };
 		69CF54DB294C2F8BA7856B9F /* Pods_TulioTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C57C8FF04F79E9D7AFD87DE5 /* Pods_TulioTests.framework */; };
 		E2D1F01D751A4CA2F3C0828E /* Pods_Tulio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A3EC5AC136381077135E77B /* Pods_Tulio.framework */; };
@@ -56,20 +60,24 @@
 		1B24A0211F4ABFFC00ADB134 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B24A02E1F4AC7B300ADB134 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		1B24A0311F4ACBA200ADB134 /* SharedFormatters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedFormatters.swift; sourceTree = "<group>"; };
-		1B24A0361F4ACEDD00ADB134 /* CustomDateTimePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomDateTimePicker.swift; sourceTree = "<group>"; };
-		1B55531C1F4EF7C900EE9544 /* MapsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapsManager.swift; sourceTree = "<group>"; };
+		1B55531C1F4EF7C900EE9544 /* MapsHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapsHelper.swift; sourceTree = "<group>"; };
 		1B68F8F51F4C17E4008B628C /* SearchViewController+SearchForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SearchViewController+SearchForm.swift"; sourceTree = "<group>"; };
 		1B68F8F81F4C195A008B628C /* ResultsViewController+Table.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ResultsViewController+Table.swift"; sourceTree = "<group>"; };
-		1B68F8FB1F4CA720008B628C /* HotwireAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotwireAPIManager.swift; sourceTree = "<group>"; };
+		1B68F8FB1F4CA720008B628C /* HotwireAPIConsumer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotwireAPIConsumer.swift; sourceTree = "<group>"; };
 		1B68F8FD1F4CA7CD008B628C /* CarResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarResult.swift; sourceTree = "<group>"; };
 		1B68F8FF1F4CA861008B628C /* SearchParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchParams.swift; sourceTree = "<group>"; };
 		1B68F9021F4CA94E008B628C /* CarResultsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarResultsInteractor.swift; sourceTree = "<group>"; };
-		1B68F9041F4CA9BB008B628C /* HotwireAPIManagerURLSessionImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotwireAPIManagerURLSessionImpl.swift; sourceTree = "<group>"; };
+		1B68F9041F4CA9BB008B628C /* HotwireAPIConsumerURLSessionImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotwireAPIConsumerURLSessionImpl.swift; sourceTree = "<group>"; };
 		1B68F9061F4CCACB008B628C /* CarResultCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarResultCell.swift; sourceTree = "<group>"; };
 		1B68F9081F4DAEFE008B628C /* SearchViewController+Keyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SearchViewController+Keyboard.swift"; sourceTree = "<group>"; };
 		1B68F90B1F4DAFD9008B628C /* CarResultDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarResultDetailViewController.swift; sourceTree = "<group>"; };
-		1B68F90D1F4DCCB5008B628C /* HotwireAPIManagerFakeImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotwireAPIManagerFakeImpl.swift; sourceTree = "<group>"; };
-		1BE3414F1F4B816E00DA303C /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		1B68F90D1F4DCCB5008B628C /* HotwireAPIConsumerFakeImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotwireAPIConsumerFakeImpl.swift; sourceTree = "<group>"; };
+		1BA4D7BB1F51605200FF5C97 /* UIColor+AppCustom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+AppCustom.swift"; sourceTree = "<group>"; };
+		1BA4D7BD1F5160B600FF5C97 /* UIVisualEffectView+AppCustom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIVisualEffectView+AppCustom.swift"; sourceTree = "<group>"; };
+		1BA4D7BF1F51611E00FF5C97 /* Date+AppCustom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+AppCustom.swift"; sourceTree = "<group>"; };
+		1BA4D7C11F51630C00FF5C97 /* TimeInterval+AppCustom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TimeInterval+AppCustom.swift"; sourceTree = "<group>"; };
+		1BA4D7C31F51725300FF5C97 /* UIDatePicker+AppCustom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDatePicker+AppCustom.swift"; sourceTree = "<group>"; };
+		1BE3414F1F4B816E00DA303C /* HotwireAPISettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotwireAPISettings.swift; sourceTree = "<group>"; };
 		1BE341511F4B848400DA303C /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		36F8DE6ED81ED74DEB303F42 /* Pods-Tulio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tulio.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tulio/Pods-Tulio.release.xcconfig"; sourceTree = "<group>"; };
 		5A3EC5AC136381077135E77B /* Pods_Tulio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tulio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,10 +109,10 @@
 		1B249FFE1F4ABFFC00ADB134 = {
 			isa = PBXGroup;
 			children = (
-				1B24A0091F4ABFFC00ADB134 /* Tulio */,
 				E5DF0148F8A811C169C49D9C /* Frameworks */,
 				663611C938F6A8F6BF0A3790 /* Pods */,
 				1B24A0081F4ABFFC00ADB134 /* Products */,
+				1B24A0091F4ABFFC00ADB134 /* Tulio */,
 				1B24A01E1F4ABFFC00ADB134 /* TulioTests */,
 			);
 			sourceTree = "<group>";
@@ -121,13 +129,13 @@
 		1B24A0091F4ABFFC00ADB134 /* Tulio */ = {
 			isa = PBXGroup;
 			children = (
-				1B24A00A1F4ABFFC00ADB134 /* AppDelegate.swift */,
 				1B24A0301F4ACB8D00ADB134 /* Common */,
 				1B24A02A1F4AC54000ADB134 /* Controllers */,
-				1B68F9011F4CA8FD008B628C /* Intercators */,
+				1B68F9011F4CA8FD008B628C /* Interactors */,
 				1B24A02C1F4AC59B00ADB134 /* Managers */,
 				1B24A02D1F4AC5EC00ADB134 /* Models */,
 				1B24A02B1F4AC55700ADB134 /* Views */,
+				1B24A00A1F4ABFFC00ADB134 /* AppDelegate.swift */,
 				1B24A0111F4ABFFC00ADB134 /* Assets.xcassets */,
 				1B24A0161F4ABFFC00ADB134 /* Info.plist */,
 			);
@@ -146,9 +154,9 @@
 		1B24A02A1F4AC54000ADB134 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				1B68F90A1F4DAFAD008B628C /* CarResultDetailViewController */,
-				1B68F8F71F4C1829008B628C /* ResultsViewController */,
 				1B68F8F41F4C17C6008B628C /* SearchViewController */,
+				1B68F8F71F4C1829008B628C /* ResultsViewController */,
+				1B68F90A1F4DAFAD008B628C /* CarResultDetailViewController */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -165,10 +173,10 @@
 		1B24A02C1F4AC59B00ADB134 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				1B68F8FB1F4CA720008B628C /* HotwireAPIManager.swift */,
-				1B68F90D1F4DCCB5008B628C /* HotwireAPIManagerFakeImpl.swift */,
-				1B68F9041F4CA9BB008B628C /* HotwireAPIManagerURLSessionImpl.swift */,
-				1B55531C1F4EF7C900EE9544 /* MapsManager.swift */,
+				1B68F8FB1F4CA720008B628C /* HotwireAPIConsumer.swift */,
+				1B68F9041F4CA9BB008B628C /* HotwireAPIConsumerURLSessionImpl.swift */,
+				1B68F90D1F4DCCB5008B628C /* HotwireAPIConsumerFakeImpl.swift */,
+				1B55531C1F4EF7C900EE9544 /* MapsHelper.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -185,8 +193,8 @@
 		1B24A0301F4ACB8D00ADB134 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				1B24A0361F4ACEDD00ADB134 /* CustomDateTimePicker.swift */,
-				1BE3414F1F4B816E00DA303C /* Settings.swift */,
+				1BA4D7BA1F51602800FF5C97 /* Extensions */,
+				1BE3414F1F4B816E00DA303C /* HotwireAPISettings.swift */,
 				1B24A0311F4ACBA200ADB134 /* SharedFormatters.swift */,
 			);
 			path = Common;
@@ -195,9 +203,9 @@
 		1B68F8F41F4C17C6008B628C /* SearchViewController */ = {
 			isa = PBXGroup;
 			children = (
-				1B68F9081F4DAEFE008B628C /* SearchViewController+Keyboard.swift */,
-				1B68F8F51F4C17E4008B628C /* SearchViewController+SearchForm.swift */,
 				1B24A02E1F4AC7B300ADB134 /* SearchViewController.swift */,
+				1B68F8F51F4C17E4008B628C /* SearchViewController+SearchForm.swift */,
+				1B68F9081F4DAEFE008B628C /* SearchViewController+Keyboard.swift */,
 			);
 			path = SearchViewController;
 			sourceTree = "<group>";
@@ -205,19 +213,19 @@
 		1B68F8F71F4C1829008B628C /* ResultsViewController */ = {
 			isa = PBXGroup;
 			children = (
-				1B68F9061F4CCACB008B628C /* CarResultCell.swift */,
-				1B68F8F81F4C195A008B628C /* ResultsViewController+Table.swift */,
 				1BE341511F4B848400DA303C /* ResultsViewController.swift */,
+				1B68F8F81F4C195A008B628C /* ResultsViewController+Table.swift */,
+				1B68F9061F4CCACB008B628C /* CarResultCell.swift */,
 			);
 			path = ResultsViewController;
 			sourceTree = "<group>";
 		};
-		1B68F9011F4CA8FD008B628C /* Intercators */ = {
+		1B68F9011F4CA8FD008B628C /* Interactors */ = {
 			isa = PBXGroup;
 			children = (
 				1B68F9021F4CA94E008B628C /* CarResultsInteractor.swift */,
 			);
-			path = Intercators;
+			path = Interactors;
 			sourceTree = "<group>";
 		};
 		1B68F90A1F4DAFAD008B628C /* CarResultDetailViewController */ = {
@@ -226,6 +234,18 @@
 				1B68F90B1F4DAFD9008B628C /* CarResultDetailViewController.swift */,
 			);
 			path = CarResultDetailViewController;
+			sourceTree = "<group>";
+		};
+		1BA4D7BA1F51602800FF5C97 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1BA4D7BB1F51605200FF5C97 /* UIColor+AppCustom.swift */,
+				1BA4D7C31F51725300FF5C97 /* UIDatePicker+AppCustom.swift */,
+				1BA4D7BD1F5160B600FF5C97 /* UIVisualEffectView+AppCustom.swift */,
+				1BA4D7BF1F51611E00FF5C97 /* Date+AppCustom.swift */,
+				1BA4D7C11F51630C00FF5C97 /* TimeInterval+AppCustom.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 		663611C938F6A8F6BF0A3790 /* Pods */ = {
@@ -452,23 +472,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B68F9051F4CA9BB008B628C /* HotwireAPIManagerURLSessionImpl.swift in Sources */,
+				1B68F9051F4CA9BB008B628C /* HotwireAPIConsumerURLSessionImpl.swift in Sources */,
 				1B68F9091F4DAEFE008B628C /* SearchViewController+Keyboard.swift in Sources */,
 				1B68F9001F4CA861008B628C /* SearchParams.swift in Sources */,
 				1B68F8F91F4C195A008B628C /* ResultsViewController+Table.swift in Sources */,
 				1B24A0321F4ACBA200ADB134 /* SharedFormatters.swift in Sources */,
+				1BA4D7C01F51611E00FF5C97 /* Date+AppCustom.swift in Sources */,
 				1B24A00B1F4ABFFC00ADB134 /* AppDelegate.swift in Sources */,
-				1B55531D1F4EF7C900EE9544 /* MapsManager.swift in Sources */,
+				1B55531D1F4EF7C900EE9544 /* MapsHelper.swift in Sources */,
+				1BA4D7C21F51630C00FF5C97 /* TimeInterval+AppCustom.swift in Sources */,
+				1BA4D7C41F51725300FF5C97 /* UIDatePicker+AppCustom.swift in Sources */,
 				1B68F8FE1F4CA7CD008B628C /* CarResult.swift in Sources */,
+				1BA4D7BC1F51605200FF5C97 /* UIColor+AppCustom.swift in Sources */,
 				1B24A02F1F4AC7B300ADB134 /* SearchViewController.swift in Sources */,
-				1B24A0371F4ACEDD00ADB134 /* CustomDateTimePicker.swift in Sources */,
 				1B68F8F61F4C17E4008B628C /* SearchViewController+SearchForm.swift in Sources */,
 				1B68F9031F4CA94E008B628C /* CarResultsInteractor.swift in Sources */,
-				1BE341501F4B816E00DA303C /* Settings.swift in Sources */,
-				1B68F90E1F4DCCB6008B628C /* HotwireAPIManagerFakeImpl.swift in Sources */,
+				1BE341501F4B816E00DA303C /* HotwireAPISettings.swift in Sources */,
+				1B68F90E1F4DCCB6008B628C /* HotwireAPIConsumerFakeImpl.swift in Sources */,
 				1BE341521F4B848400DA303C /* ResultsViewController.swift in Sources */,
 				1B68F90C1F4DAFD9008B628C /* CarResultDetailViewController.swift in Sources */,
-				1B68F8FC1F4CA720008B628C /* HotwireAPIManager.swift in Sources */,
+				1B68F8FC1F4CA720008B628C /* HotwireAPIConsumer.swift in Sources */,
+				1BA4D7BE1F5160B600FF5C97 /* UIVisualEffectView+AppCustom.swift in Sources */,
 				1B68F9071F4CCACB008B628C /* CarResultCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

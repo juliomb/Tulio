@@ -68,7 +68,7 @@ class CarResultDetailViewController: UIViewController {
     }
     
     @IBAction func locationButtonClicked(_ sender: Any) {
-        MapsManager.openMaps(withLocation: carResult.location)
+        MapsHelper.openMaps(withLocation: carResult.location)
     }
     
 }

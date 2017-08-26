@@ -39,7 +39,7 @@ class CarResult {
         }
     }
     var imageURL: URL? {
-        return Settings.baseCarImagesURL.appendingPathComponent("\(carTypeCode).png")
+        return HotwireAPISettings.baseCarImagesURL.appendingPathComponent("\(carTypeCode).png")
     }
 
     let pickupAirport: String?
@@ -100,6 +100,16 @@ class CarResult {
             self.vendorLocation = nil
         }
         
+    }
+    
+    static func carResults(fromJSON json: [Dictionary<String, Any>]) -> [CarResult] {
+        var carResults: [CarResult] = []
+        for carJSON in json {
+            if let carResult = CarResult(json: carJSON){
+                carResults.append(carResult)
+            }
+        }
+        return carResults
     }
     
     
