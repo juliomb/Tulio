@@ -8,7 +8,7 @@
 
 import Foundation
 
-class HotwireAPIConsumerURLSessionImpl: HotwireAPIConsumer {
+class HotwireAPIConsumerURLSessionImpl: HotwireAPIConsumable {
     
     let session = URLSession.shared
     let baseURLComponents = HotwireAPISettings.baseURLComponents

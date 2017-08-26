@@ -10,7 +10,7 @@ import Foundation
 
 extension TimeInterval {
     
-    static let minimumRentInterval = TimeInterval(60*60) // one hour
-    static let defaultRentInterval = TimeInterval(60*60*24*7) // one week
+    static let minimumRent = TimeInterval(60*60) // one hour
+    static let defaultRent = TimeInterval(60*60*24*7) // one week
     
 }

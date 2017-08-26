@@ -10,7 +10,7 @@ import UIKit
 
 extension UIVisualEffectView {
     
-    static func defaultVisualEffectView(withFrame frame: CGRect) -> UIVisualEffectView {
+    static func appDefault(withFrame frame: CGRect) -> UIVisualEffectView {
         let effect = UIBlurEffect(style: .extraLight)
         let effectView = self.init(effect: effect)
         effectView.frame = frame

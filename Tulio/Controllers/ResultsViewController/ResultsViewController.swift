@@ -72,7 +72,7 @@ class ResultsViewController: UIViewController {
         let detailVC = segue.destination as! CarResultDetailViewController
         detailVC.carResult = carResult
         detailVC.view.frame = view.bounds
-        detailVC.view.insertSubview(UIVisualEffectView.defaultVisualEffectView(withFrame: view.bounds), at: 0)
+        detailVC.view.insertSubview(UIVisualEffectView.appDefault(withFrame: view.bounds), at: 0)
         detailVC.modalPresentationStyle = .overFullScreen
         resultsTableView.deselectRow(at: resultsTableView.indexPathForSelectedRow!, animated: false)
     }

@@ -10,7 +10,7 @@ import UIKit
 
 extension UIDatePicker {
     
-    func setupAsSearchDatePicker() {
+    func setupAsAppDefault() {
         self.datePickerMode = .dateAndTime
         self.locale =  Locale(identifier: "en_GB")
         self.minuteInterval = 30

@@ -1,5 +1,5 @@
 //
-//  HotwireAPIConsumer.swift
+//  HotwireAPIConsumable.swift
 //  Tulio
 //
 //  Created by Julio Martinez on 22/08/2017.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol HotwireAPIConsumer {
+protocol HotwireAPIConsumable {
     
     func searchCars(withSearchParams searchParams: SearchParams, completion: @escaping ([CarResult]) -> Void, onError: ((Error) -> Void)?)
     

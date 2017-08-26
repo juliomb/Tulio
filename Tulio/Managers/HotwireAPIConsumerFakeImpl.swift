@@ -9,7 +9,7 @@
 import Foundation
 
 
-class HotwireAPIConsumerFakeImpl: HotwireAPIConsumer {
+class HotwireAPIConsumerFakeImpl: HotwireAPIConsumable {
     
     let fakeJSON = [
         "CurrencyCode": "USD",

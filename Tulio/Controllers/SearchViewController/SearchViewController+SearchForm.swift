@@ -12,8 +12,8 @@ extension SearchViewController: UITextFieldDelegate {
     
     func setupDateInputViews(){
         
-        fromDatePicker.setupAsSearchDatePicker()
-        untilDatePicker.setupAsSearchDatePicker()
+        fromDatePicker.setupAsAppDefault()
+        untilDatePicker.setupAsAppDefault()
         
         fromDatePicker.addTarget(self, action: #selector(dateChanged(_:)), for: .valueChanged)
         untilDatePicker.addTarget(self, action: #selector(dateChanged(_:)), for: .valueChanged)
@@ -23,7 +23,7 @@ extension SearchViewController: UITextFieldDelegate {
         
         // this will put in the text views the default values
         fromDatePicker.date = Date.tomorrowMorning
-        untilDatePicker.date = Date.tomorrowMorning.addingTimeInterval(TimeInterval.defaultRentInterval)
+        untilDatePicker.date = Date.tomorrowMorning.addingTimeInterval(TimeInterval.defaultRent)
         dateChanged(fromDatePicker)
         dateChanged(untilDatePicker)
     }
@@ -34,8 +34,8 @@ extension SearchViewController: UITextFieldDelegate {
             fromDatePicker.date = Date.currentRoundHour
         }
         // we can't allow that until date is before than from date
-        if untilDatePicker.date < fromDatePicker.date+TimeInterval.minimumRentInterval {
-            untilDatePicker.date = fromDatePicker.date.addingTimeInterval(TimeInterval.minimumRentInterval)
+        if untilDatePicker.date < fromDatePicker.date+TimeInterval.minimumRent {
+            untilDatePicker.date = fromDatePicker.date.addingTimeInterval(TimeInterval.minimumRent)
         }
         fromDateTextField.text = dateFormatter.string(from: fromDatePicker.date)
         untilDateTextField.text = dateFormatter.string(from: untilDatePicker.date)

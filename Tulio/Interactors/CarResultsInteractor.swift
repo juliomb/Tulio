@@ -10,9 +10,9 @@ import Foundation
 
 class CarResultsInteractor {
     
-    let apiConsumer: HotwireAPIConsumer
+    let apiConsumer: HotwireAPIConsumable
     
-    init(apiConsumer: HotwireAPIConsumer = HotwireAPIConsumerURLSessionImpl()) {
+    init(apiConsumer: HotwireAPIConsumable = HotwireAPIConsumerURLSessionImpl()) {
         self.apiConsumer = apiConsumer
     }
     

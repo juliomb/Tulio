@@ -17,7 +17,7 @@
 		1B55531D1F4EF7C900EE9544 /* MapsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B55531C1F4EF7C900EE9544 /* MapsHelper.swift */; };
 		1B68F8F61F4C17E4008B628C /* SearchViewController+SearchForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B68F8F51F4C17E4008B628C /* SearchViewController+SearchForm.swift */; };
 		1B68F8F91F4C195A008B628C /* ResultsViewController+Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B68F8F81F4C195A008B628C /* ResultsViewController+Table.swift */; };
-		1B68F8FC1F4CA720008B628C /* HotwireAPIConsumer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B68F8FB1F4CA720008B628C /* HotwireAPIConsumer.swift */; };
+		1B68F8FC1F4CA720008B628C /* HotwireAPIConsumable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B68F8FB1F4CA720008B628C /* HotwireAPIConsumable.swift */; };
 		1B68F8FE1F4CA7CD008B628C /* CarResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B68F8FD1F4CA7CD008B628C /* CarResult.swift */; };
 		1B68F9001F4CA861008B628C /* SearchParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B68F8FF1F4CA861008B628C /* SearchParams.swift */; };
 		1B68F9031F4CA94E008B628C /* CarResultsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B68F9021F4CA94E008B628C /* CarResultsInteractor.swift */; };
@@ -63,7 +63,7 @@
 		1B55531C1F4EF7C900EE9544 /* MapsHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapsHelper.swift; sourceTree = "<group>"; };
 		1B68F8F51F4C17E4008B628C /* SearchViewController+SearchForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SearchViewController+SearchForm.swift"; sourceTree = "<group>"; };
 		1B68F8F81F4C195A008B628C /* ResultsViewController+Table.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ResultsViewController+Table.swift"; sourceTree = "<group>"; };
-		1B68F8FB1F4CA720008B628C /* HotwireAPIConsumer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotwireAPIConsumer.swift; sourceTree = "<group>"; };
+		1B68F8FB1F4CA720008B628C /* HotwireAPIConsumable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotwireAPIConsumable.swift; sourceTree = "<group>"; };
 		1B68F8FD1F4CA7CD008B628C /* CarResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarResult.swift; sourceTree = "<group>"; };
 		1B68F8FF1F4CA861008B628C /* SearchParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchParams.swift; sourceTree = "<group>"; };
 		1B68F9021F4CA94E008B628C /* CarResultsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarResultsInteractor.swift; sourceTree = "<group>"; };
@@ -173,7 +173,7 @@
 		1B24A02C1F4AC59B00ADB134 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				1B68F8FB1F4CA720008B628C /* HotwireAPIConsumer.swift */,
+				1B68F8FB1F4CA720008B628C /* HotwireAPIConsumable.swift */,
 				1B68F9041F4CA9BB008B628C /* HotwireAPIConsumerURLSessionImpl.swift */,
 				1B68F90D1F4DCCB5008B628C /* HotwireAPIConsumerFakeImpl.swift */,
 				1B55531C1F4EF7C900EE9544 /* MapsHelper.swift */,
@@ -491,7 +491,7 @@
 				1B68F90E1F4DCCB6008B628C /* HotwireAPIConsumerFakeImpl.swift in Sources */,
 				1BE341521F4B848400DA303C /* ResultsViewController.swift in Sources */,
 				1B68F90C1F4DAFD9008B628C /* CarResultDetailViewController.swift in Sources */,
-				1B68F8FC1F4CA720008B628C /* HotwireAPIConsumer.swift in Sources */,
+				1B68F8FC1F4CA720008B628C /* HotwireAPIConsumable.swift in Sources */,
 				1BA4D7BE1F5160B600FF5C97 /* UIVisualEffectView+AppCustom.swift in Sources */,
 				1B68F9071F4CCACB008B628C /* CarResultCell.swift in Sources */,
 			);

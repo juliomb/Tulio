@@ -10,6 +10,6 @@ import UIKit
 
 extension UIColor {
     
-    static let defaultTintColor = #colorLiteral(red: 0.07843137255, green: 0.6666666667, blue: 0.0862745098, alpha: 1)
+    static let appDefault = #colorLiteral(red: 0.07843137255, green: 0.6666666667, blue: 0.0862745098, alpha: 1)
     
 }
