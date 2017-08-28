@@ -154,9 +154,9 @@
 		1B24A02A1F4AC54000ADB134 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				1B68F8F41F4C17C6008B628C /* SearchViewController */,
-				1B68F8F71F4C1829008B628C /* ResultsViewController */,
 				1B68F90A1F4DAFAD008B628C /* CarResultDetailViewController */,
+				1B68F8F71F4C1829008B628C /* ResultsViewController */,
+				1B68F8F41F4C17C6008B628C /* SearchViewController */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -174,8 +174,8 @@
 			isa = PBXGroup;
 			children = (
 				1B68F8FB1F4CA720008B628C /* HotwireAPIConsumable.swift */,
-				1B68F9041F4CA9BB008B628C /* HotwireAPIConsumerURLSessionImpl.swift */,
 				1B68F90D1F4DCCB5008B628C /* HotwireAPIConsumerFakeImpl.swift */,
+				1B68F9041F4CA9BB008B628C /* HotwireAPIConsumerURLSessionImpl.swift */,
 				1B55531C1F4EF7C900EE9544 /* MapsHelper.swift */,
 			);
 			path = Managers;
@@ -203,9 +203,9 @@
 		1B68F8F41F4C17C6008B628C /* SearchViewController */ = {
 			isa = PBXGroup;
 			children = (
-				1B24A02E1F4AC7B300ADB134 /* SearchViewController.swift */,
-				1B68F8F51F4C17E4008B628C /* SearchViewController+SearchForm.swift */,
 				1B68F9081F4DAEFE008B628C /* SearchViewController+Keyboard.swift */,
+				1B68F8F51F4C17E4008B628C /* SearchViewController+SearchForm.swift */,
+				1B24A02E1F4AC7B300ADB134 /* SearchViewController.swift */,
 			);
 			path = SearchViewController;
 			sourceTree = "<group>";
@@ -213,9 +213,9 @@
 		1B68F8F71F4C1829008B628C /* ResultsViewController */ = {
 			isa = PBXGroup;
 			children = (
-				1BE341511F4B848400DA303C /* ResultsViewController.swift */,
-				1B68F8F81F4C195A008B628C /* ResultsViewController+Table.swift */,
 				1B68F9061F4CCACB008B628C /* CarResultCell.swift */,
+				1B68F8F81F4C195A008B628C /* ResultsViewController+Table.swift */,
+				1BE341511F4B848400DA303C /* ResultsViewController.swift */,
 			);
 			path = ResultsViewController;
 			sourceTree = "<group>";
@@ -239,13 +239,14 @@
 		1BA4D7BA1F51602800FF5C97 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				1BA4D7BF1F51611E00FF5C97 /* Date+AppCustom.swift */,
+				1BA4D7C11F51630C00FF5C97 /* TimeInterval+AppCustom.swift */,
 				1BA4D7BB1F51605200FF5C97 /* UIColor+AppCustom.swift */,
 				1BA4D7C31F51725300FF5C97 /* UIDatePicker+AppCustom.swift */,
 				1BA4D7BD1F5160B600FF5C97 /* UIVisualEffectView+AppCustom.swift */,
-				1BA4D7BF1F51611E00FF5C97 /* Date+AppCustom.swift */,
-				1BA4D7C11F51630C00FF5C97 /* TimeInterval+AppCustom.swift */,
 			);
 			name = Extensions;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		663611C938F6A8F6BF0A3790 /* Pods */ = {
