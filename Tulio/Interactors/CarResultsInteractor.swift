@@ -16,7 +16,7 @@ class CarResultsInteractor {
         self.apiConsumer = apiConsumer
     }
     
-    func execute(withSearchParams searchParams: SearchParams, completion: @escaping ([CarResult]) -> Void, onError: ((Error) -> Void)? = nil) {
+    func execute(with searchParams: SearchParams, completion: @escaping ([CarResult]) -> Void, onError: ((Error) -> Void)? = nil) {
         apiConsumer.searchCars(withSearchParams: searchParams, completion: { carResults in
             assert(Thread.current == Thread.main)
             completion(carResults)

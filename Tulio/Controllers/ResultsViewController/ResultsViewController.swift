@@ -58,7 +58,7 @@ class ResultsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        CarResultsInteractor().execute(withSearchParams: searchParams, completion: { (carResults) in
+        CarResultsInteractor().execute(with: searchParams, completion: { (carResults) in
             self.carResults = carResults
             self.state = carResults.count > 0 ? .results : .noResults
         }) { (error) in
